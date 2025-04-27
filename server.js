@@ -12,7 +12,7 @@ const app = express()
 //db
 connectDB()
 //middleware
-app.use(cors())
+app.use(cors({origin:"https://admin-dash-board-frontend.vercel.app"}))
 app.use(express.json())
 
 //routes
